@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/shop_detail.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/shop_detail.css">
+    <title>shop_detail</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="gnb clearfix">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">MY PAGE </a></li>
+                </ul>
+                <div class="find">
+                    <a href="#"><img src="img/main/find.png" alt=""></a>
+                </div><!--//find-->
+            </div><!--//gnb-->
+            <div class="logo_nav">
+                <div class="logo">
+                    <h1><a href="index.html"><img src="img/main/logo.png" alt=""></a></h1>
+                </div><!--//logo-->
+                <nav class="clearfix">
+                    <ul class="main_menu">
+                        <li><a href="shop_category.html">SHOP</a>
+                            <ul class="sub_menu">
+                                <li><a href="shop_category.html">카테고리별</a></li>
+                                <li><a href="shop_trouble.html">기능/고민별</a></li>
+                                <li><a href="shop_ingredient.html">성분별</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="event.html">EVENT</a></li>
+                        <li><a href="how.html">HOW</a></li>
+                        <li><a href="review.html">REVIEW</a></li>
+                        <li><a href="#">PRESS</a></li>
+                        <li><a href="story.html">BRAND</a>
+                            <ul class="sub_menu">
+                                <li><a href="story.html">STORY</a></li>
+                                <li><a href="ingredient.html">성분천재시드물</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">C/S CENTER</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">NOTICE</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!--//logo_nav-->
+        </header>
+        <section class="detail_top">
+            <div class="detail_img">
+                <img src="img/shop/detail.png" alt="">
+            </div>
+            <div class="detail_text">
+                <span></span>
+                <p>40% ↓</p>
+                <p>저분자 콜라겐 아이 세럼 20ml</p>
+                <p>소비자가<span>32,000원</span></p>
+                <p>판매가<span>16,800원</span></p>
+                <p>배송방법<span>택배</span></p>
+                <p>배송비<span>2,500원(20,000원 이상 구매 시 무료)</span></p>
+                <div class="order">
+                    <p>저분자 콜라겐 아이 세럼 20ml</p>
+                    <div class="order_btn">
+                        <div id='result'>1</div>
+                        <div class="order_updown">
+                            <input type='button'
+                                onclick='count("plus")'
+                                value='∧'
+                                class="button">
+                            <input type='button'
+                                onclick='count("minus")'
+                                value='∨'
+                                class="button">
+                        </div>
+                    </div>
+                    <p class="money">16,800원</p>
+                </div>
+                <p>TOTAL<strong class="money">16,800원</strong><span>(1개)</span></p>
+                <a href="#">구매하기</a>
+                <div class="shopping">
+                    <a href="#">장바구니</a>
+                    <a href="#">관심상품</a>
+                </div>
+            </div>
+        </section>
+        <section class="detail_btn">
+            <div class="btn">
+                <p><a href="#">관련상품</a></p>
+                <p><a href="#">상품정보</a></p>
+                <p><a href="#">구매정보</a></p>
+                <p><a href="#">상품후기(115)</a></p>
+                <p><a href="#">상품문의(10)</a></p>
+            </div>
+        </section>
+        <section class="detail_bottom">
+
+        </section>
+        <footer>
+            <div class="footer_content">
+                <div class="footer_ct">
+                    <p>1577-9638</p>
+                    <p>AM 9:00 - PM 5:00 (주말 및 공휴일 휴무)</p>
+                </div>
+                <div class="footer_ct">
+                    <p>COMPANY</p>
+                    <p>상호 주식회사시드물 대표 민병권 사업자등록번호 305-81-94469</p>
+                    <p>통신판매업신고 2008-대전중구-0247호 <strong>[사업자정보확인]</strong></p>
+                    <p>주소 대전광역시 중구 안영로 42(안영동) 개인정보관리책임자 박소진</p>
+                    <p>고객문의 help@sidmool.com 해외 고객만족 상담실 +82-42-716-0227</p>
+                </div>
+                <div class="footer_ct">
+                    <p>BANK</p>
+                    <p>예금주 (주)시드물</p>
+                    <select name="bank">
+                        <option value="#">국민 460001-04-214514</option>
+                        <option value="#">농협 355-0002-8749-13</option>
+                        <option value="#">하나 643-910004-62604</option>
+                        <option value="#">신한 100-027-169517</option>
+                        <option value="#">우리 1005-902-241888</option>
+                        <option value="#">우체국 310037-01-011233</option>
+                        <option value="#">기업 143-122078-01-015</option>
+                        <option value="#">부산 101-2047-1354-09</option>
+                    </select>
+                </div>
+            </div>
+            <div class="m_footer_content">
+                <div class="m_footer_ct">
+                    <p>1577-9638</p>
+                    <p>AM 9:00 - PM 5:00 (주말 및 공휴일 휴무)</p>
+                </div>
+                <div class="m_footer_ct">
+                    <p>BANK</p>
+                    <div class="m_footer_bank">
+                        <p>예금주 (주)시드물</p>
+                        <select name="bank">
+                            <option value="#">국민 460001-04-214514</option>
+                            <option value="#">농협 355-0002-8749-13</option>
+                            <option value="#">하나 643-910004-62604</option>
+                            <option value="#">신한 100-027-169517</option>
+                            <option value="#">우리 1005-902-241888</option>
+                            <option value="#">우체국 310037-01-011233</option>
+                            <option value="#">기업 143-122078-01-015</option>
+                            <option value="#">부산 101-2047-1354-09</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="m_footer_ct">
+                    <p>COMPANY</p>
+                    <p>상호 주식회사시드물 대표 민병권 사업자등록번호 305-81-94469</p>
+                    <p>통신판매업신고 2008-대전중구-0247호 <strong>[사업자정보확인]</strong></p>
+                    <p>주소 대전광역시 중구 안영로 42(안영동) 개인정보관리책임자 박소진</p>
+                    <p>고객문의 help@sidmool.com 해외 고객만족 상담실 +82-42-716-0227</p>
+                </div>
+            </div>
+        </footer>
+        <div id="scroll_top">
+            <img src="img/top.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
